@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial Tutorial</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<header th:insert="fragments/_header :: header"></header>
+<h2>How Do We Use This Info? Step 2 - Create The Tutorial!</h2>
+
+<div>
+    <img th:src="@{/img/tutor-create.jpg}" alt="People Creating A Cube">
+    <p>
+        Image from <a href="https://www.dreamstime.com/stock-illustration-isometric-people-concept-creating-d-image-white-background-image82071158"
+                      target="_blank">Dreamstime</a>
+    </p>
+</div>
+
+<p>Once the tutorial topic has been discovered, the next step is to create the tutorial. While this is clearly quite
+    the difficult task, it can be simplified quite a bit. All you have to do, is gather any needed information from
+    experience and research, and compile all you learned into a list of things the tutorial needs to be completed,
+    alongside an ordered list of steps that must be taken.</p>
+
+<div id="botnavsec">
+    <a th:href="@{/steps/discover}" id="previousbutton" class="navbutton">Previous</a>
+    <a th:href="@{/steps/publish}" id="nextbutton" class="navbutton">Next</a>
+</div>
+
+<footer th:replace="fragments/_footer :: footer"></footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial Tutorial</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<header th:insert="fragments/_header :: header"></header>
+<h2>How To Begin? Step 1 - Discover What People Need!</h2>
+
+<div>
+    <img th:src="@{/img/tutoridea.jpeg}" alt="People Discussing Things">
+    <p>
+        Image from <a href="https://hover.blog/how-to-lead-an-effective-brainstorm-with-your-team-or-just-you/"
+                      target="_blank">Hover</a>
+    </p>
+</div>
+
+<p>Not everything is in need of a tutorial, and many things already have lots of tutorials, so the first thing any
+    good tutorial must do, is to discover and cover things that seem like they need it. If you are making a tutorial
+    for something not released yet, or something you had difficulty getting all the right information on, then you
+    may already have the right topic, but otherwise, research can help.</p>
+
+<div id="botnavsec">
+    <a th:href="@{/}" id="previousbutton" class="navbutton">Previous</a>
+    <a th:href="@{/steps/create}" id="nextbutton" class="navbutton">Next</a>
+</div>
+
+<footer th:replace="fragments/_footer :: footer"></footer>
+</body>
+</html>

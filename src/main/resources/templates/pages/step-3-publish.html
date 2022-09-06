@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial Tutorial</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<header th:insert="fragments/_header :: header"></header>
+<h2>How Will People See The Tutorial? Step 3 - Publish It!</h2>
+
+<div>
+    <img th:src="@{/img/tutor-publish.jpg}" alt="Finger Going To Click Publish Button">
+    <p>
+        Image from <a href="https://www.dreamstime.com/keyboard-blue-publish-button-light-bulb-computer-laptop-fingers-vector-illustration-image139362232"
+                      target="_blank">Dreamstime</a>
+    </p>
+</div>
+
+<p>Now that the tutorial is fully created, there is only one thing left to do, and that is to release the tutorial
+    for the whole world to see. To do this, all you have to do is publish the tutorial by putting it on a website, or
+    any other publicly available source you have access to. If you want more people to see the tutorial, you can also
+    promote or advertise it through a variety of means, but this isn't required.</p>
+<p>Congratulations! After this, you should now have a completed tutorial!</p>
+
+<div id="botnavsec">
+    <a th:href="@{/steps/create}" id="previousbutton" class="navbutton">Previous</a>
+</div>
+
+<footer th:replace="fragments/_footer :: footer"></footer>
+</body>
+</html>

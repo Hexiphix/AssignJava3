@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial Tutorial</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<header th:insert="fragments/_header :: header"></header>
+<h2>Welcome To How To Make Tutorial</h2>
+<p>This site will teach the basics of how to make a tutorial</p>
+
+<div>
+    <img th:src="@{/img/tutorialhomeimg.jpg}" alt="Hand Writing The Word Tutorial">
+    <p>
+        Image from <a href="https://www.midi.org/midi-articles/tutorials"
+                      target="_blank">MIDI Association</a>
+    </p>
+</div>
+
+<h2>How Do You Make A Tutorial?</h2>
+<p>To make a tutorial, one must follow three simple steps in order to get a complete tutorial. This site will teach you
+    how to make a tutorial much like this one.</p>
+
+<div id="botnavsec">
+    <a th:href="@{/steps/discover}" id="nextbutton" class="navbutton">Next</a>
+</div>
+
+<footer th:replace="fragments/_footer :: footer"></footer>
+</body>
+</html>
